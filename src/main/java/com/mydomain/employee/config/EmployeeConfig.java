@@ -17,8 +17,10 @@ public class EmployeeConfig {
     {
         return new RestTemplate();
     };
+    
    @Bean
    public ModelMapper modelMapper(){return  new ModelMapper();};
+   
    @Bean
    public EmployeeMapperImpl employeeMapper(){return new EmployeeMapperImpl();}
 }
